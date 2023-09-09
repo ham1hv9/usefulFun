@@ -52,6 +52,13 @@ use_git_config(user.name  = 'ham1hv9', user.email = 'ham0hv9@fpl.com')
 # Now we make it also a Git repository, with use_git(). User 'ham1hv9'
 use_git()
 
+#> The best way to connect RStudio and GitHub is using your username and a
+#> Personal Access Token (PAT). To generate a personal access token, use the create_github_token()
+create_github_token()
+
+library(gitcreds)
+gitcreds_set()
+
 # use_github() is a helper that we recommend for the long-term.
 use_github()
 
