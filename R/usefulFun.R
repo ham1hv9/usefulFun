@@ -47,5 +47,13 @@ test()
 # If you want to use another package, First, declare your general intent to use some functions from the stringr namespace with use_package():
 use_package("stringr")
 
+# 1. Initialize GitHub
+use_git_config(user.name  = 'ham1hv9', user.email = 'ham0hv9@fpl.com')
+
 # use_github() is a helper that we recommend for the long-term.
 use_github()
+
+usethis::create_from_github(auth_token = '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',
+                            repo_spec  = "https://github.com/ham1hv9/usefulFun.git",
+                            destdir    = "E:/Git/usefulFun/"
+)
