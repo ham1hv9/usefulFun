@@ -2,8 +2,7 @@
 library(devtools)
 library(roxygen2)
 
-# Now we make it also a Git repository, with use_git(). User 'ham1hv9'
-use_git()
+
 
 # The helper use_r() creates and/or opens a script below or in the R/ directory.
 use_r("Useful_Functions_Definitions")
@@ -49,6 +48,9 @@ use_package("stringr")
 
 # 1. Initialize GitHub
 use_git_config(user.name  = 'ham1hv9', user.email = 'ham0hv9@fpl.com')
+
+# Now we make it also a Git repository, with use_git(). User 'ham1hv9'
+use_git()
 
 # use_github() is a helper that we recommend for the long-term.
 use_github()
